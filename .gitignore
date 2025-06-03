@@ -12,3 +12,5 @@ venv/
 .vscode/
 .idea/
 
+/apps/adotante/__pycache__/*
+/apps/adotante/migrations/*
