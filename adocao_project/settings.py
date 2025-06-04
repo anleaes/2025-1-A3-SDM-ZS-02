@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'adotante.apps.AdotanteConfig',
+    'apps.adotante.apps.AdotanteConfig',
     
 ]
 
