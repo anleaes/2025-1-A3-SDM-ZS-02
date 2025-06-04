@@ -22,4 +22,5 @@ urlpatterns = [
     path('adotante/', include('apps.adotante.urls')),
     path('abrigo/', include('apps.abrigo.urls')),
     path('adocao/', include('apps.adocao.urls')),
+    path('tipo/', include('apps.tipo.urls')),
 ]
