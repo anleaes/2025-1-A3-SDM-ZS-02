@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'apps.adotante.apps.AdotanteConfig',
+    'apps.abrigo.apps.AbrigoConfig',
     
 ]
 
