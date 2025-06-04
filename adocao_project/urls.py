@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('adotante/', include('apps.adotante.urls')),
     path('abrigo/', include('apps.abrigo.urls')),
+    path('adocao/', include('apps.adocao.urls')),
 ]
