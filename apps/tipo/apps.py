@@ -3,4 +3,5 @@ from django.apps import AppConfig
 
 class TipoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'tipo'
+    name = 'apps.tipo'
+    verbose_name = 'Tipo de Animal'

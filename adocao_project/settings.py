@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'apps.adotante.apps.AdotanteConfig',
     'apps.abrigo.apps.AbrigoConfig',
     'apps.adocao.apps.AdocaoConfig',
+    'apps.tipo.apps.TipoConfig',
     
 ]
 
