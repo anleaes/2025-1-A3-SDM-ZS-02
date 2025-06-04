@@ -16,3 +16,5 @@ venv/
 /apps/adotante/migrations/*
 /apps/abrigo/__pycache__/*
 /apps/abrigo/migrations/*
+/apps/adocao/__pycache__/*
+/apps/adocao/migrations/*
