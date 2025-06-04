@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'apps.adotante.apps.AdotanteConfig',
     'apps.abrigo.apps.AbrigoConfig',
+    'apps.adocao.apps.AdocaoConfig',
     
 ]
 
