@@ -23,4 +23,5 @@ urlpatterns = [
     path('abrigo/', include('apps.abrigo.urls')),
     path('adocao/', include('apps.adocao.urls')),
     path('tipo/', include('apps.tipo.urls')),
+    path('animal/', include('apps.animal.urls')),
 ]
