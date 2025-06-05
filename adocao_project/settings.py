@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'apps.abrigo.apps.AbrigoConfig',
     'apps.adocao.apps.AdocaoConfig',
     'apps.tipo.apps.TipoConfig',
+    'apps.animal.apps.AnimalConfig',
     
 ]
 
