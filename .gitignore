@@ -20,3 +20,5 @@ venv/
 /apps/adocao/migrations/*
 /apps/tipo/__pycache__/*
 /apps/tipo/migrations/*
+/apps/animal/__pycache__/*
+/apps/animal/migrations/*
