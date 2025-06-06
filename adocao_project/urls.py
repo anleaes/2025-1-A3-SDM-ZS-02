@@ -25,4 +25,5 @@ urlpatterns = [
     path('tipo/', include('apps.tipo.urls')),
     path('animal/', include('apps.animal.urls')),
     path('adocaoitem/', include('apps.adocaoitem.urls')),
+    path('vacina/', include('apps.vacina.urls')),
 ]
