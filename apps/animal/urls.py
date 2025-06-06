@@ -1,6 +1,6 @@
 from django.urls import path, include
 from . import views
-from rest_framework import Router
+from rest_framework import routers
 
 # Criação url para o app animal
 
