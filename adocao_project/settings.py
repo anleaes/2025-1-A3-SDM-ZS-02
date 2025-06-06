@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'apps.animal.apps.AnimalConfig',
     'apps.adocaoitem.apps.AdocaoitemConfig',
     'apps.vacina.apps.VacinaConfig',
+    'apps.checklist.apps.ChecklistConfig',
     
 ]
 
