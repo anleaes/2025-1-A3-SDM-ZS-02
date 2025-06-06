@@ -21,4 +21,4 @@ class AdocaoItem(models.Model):
         unique_together = ('adocao', 'animal')
 
     def __str__(self):
-        return f"{self.animal.nome} - {self.quantidade} item(s) na adoção {self.adocao.id}"
+        return f"{self.animal.nome} na adoção {self.adocao.id}"
