@@ -8,7 +8,17 @@ from apps.abrigo.models import Abrigo
 class AdocaoSerializer(serializers.ModelSerializer):
     adotante = serializers.PrimaryKeyRelatedField(queryset=Adotante.objects.all())
     abrigo = serializers.PrimaryKeyRelatedField(queryset=Abrigo.objects.all())
-
+    adotante_nome = serializers.CharField(source='adotante.nome', read_only=True)
+    abrigo_nome = serializers.CharField(source='abrigo.nome', read_only=True)
     class Meta:
         model = AdocaoAbrigo
-        fields = '__all__'
+        fields = [
+            'id',
+            'adotante',
+            'abrigo',
+            'status',
+            'data_solicitacao',
+            'data_atualizacao',
+            'adotante_nome',
+            'abrigo_nome'
+        ]
