@@ -14,7 +14,6 @@ class AdocaoItem(models.Model):
         on_delete=models.CASCADE, 
         related_name='itens_adocao'
     )
-    quantidade = models.PositiveIntegerField(default=1)
 
     class Meta:
         verbose_name = 'Item de Adoção'
