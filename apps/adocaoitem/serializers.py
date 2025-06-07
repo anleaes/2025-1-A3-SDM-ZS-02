@@ -8,7 +8,12 @@ class AnimalSimplesSerializer(serializers.ModelSerializer):
         model = Animal
         fields = ['id', 'nome']
 
+class AdocaoItemSimplesSerializer(serializers.ModelSerializer):
+    animal = AnimalSimplesSerializer(read_only=True)
 
+    class Meta:
+        model = AdocaoItem
+        fields = ['id', 'animal']
 
 class AdocaoItemSerializer(serializers.ModelSerializer):
     animal = AnimalSimplesSerializer(read_only=True)
@@ -22,8 +27,12 @@ class AdocaoItemSerializer(serializers.ModelSerializer):
         queryset=AdocaoAbrigo.objects.all(),
         write_only=True
     )
-    
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        animal_adotados = AdocaoItem.objects.filter(adocao__status='aceito').values_list('animal_id', flat=True)
+        self.fields['animal_id'].queryset = Animal.objects.exclude(id__in=animal_adotados)
+
     class Meta:
         model = AdocaoItem
-        fields = ['id','adocao_id','animal','animal_id']
-        
+        fields = ['id', 'adocao_id', 'animal', 'animal_id']

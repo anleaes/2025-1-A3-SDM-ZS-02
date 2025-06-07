@@ -31,7 +31,7 @@ class AdocaoAbrigo(models.Model):
     )
     data_solicitacao = models.DateTimeField(auto_now_add=True)
     data_atualizacao = models.DateTimeField(auto_now=True)
-
+    
     class Meta:
         verbose_name = 'Adoção'
         verbose_name_plural = 'Adoções'

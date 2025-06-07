@@ -7,3 +7,10 @@ from .serializers import AdocaoSerializer
 class AdocaoViewSet(viewsets.ModelViewSet):
     queryset = AdocaoAbrigo.objects.all()
     serializer_class = AdocaoSerializer
+
+    def perform_update(self, serializer):
+        instance = serializer.save()
+        if instance.status == 'aceito':
+            for item in instance.itens.all(): 
+                item.animal.status = 'adotado'
+                item.animal.save()

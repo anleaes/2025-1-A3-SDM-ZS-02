@@ -7,7 +7,7 @@ class AdocaoItem(models.Model):
     adocao = models.ForeignKey(
         AdocaoAbrigo, 
         on_delete=models.CASCADE, 
-        related_name='itens_adocao'
+        related_name='itens'
     )
     animal = models.ForeignKey(
         Animal, 

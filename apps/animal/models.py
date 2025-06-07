@@ -11,6 +11,15 @@ class Animal(models.Model):
         related_name='animais',
         verbose_name='Tipo de Animal'
     )
+    STATUS_CHOICES = [
+        ('disponivel', 'Disponível'),
+        ('adotado', 'Adotado'),
+    ]
+    status = models.CharField(
+        max_length=10,
+        choices=STATUS_CHOICES,
+        default='disponivel',
+    )
     descricao = models.TextField(blank=True, null=True, verbose_name='Descrição do Animal')
 
     def __str__(self):
