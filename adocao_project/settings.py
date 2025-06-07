@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'apps.adocaoitem.apps.AdocaoitemConfig',
     'apps.vacina.apps.VacinaConfig',
     'apps.checklist.apps.ChecklistConfig',
+    'corsheaders',
     
 ]
 
@@ -63,6 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'adocao_project.urls'
