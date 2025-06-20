@@ -6,7 +6,7 @@ from apps.adocao.models import AdocaoAbrigo
 class AnimalSimplesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Animal
-        fields = ['id', 'nome']
+        fields = ['id', 'nome','imagem']
 
 class AdocaoItemSimplesSerializer(serializers.ModelSerializer):
     animal = AnimalSimplesSerializer(read_only=True)

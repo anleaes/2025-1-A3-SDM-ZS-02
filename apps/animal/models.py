@@ -21,6 +21,12 @@ class Animal(models.Model):
         default='disponivel',
     )
     descricao = models.TextField(blank=True, null=True, verbose_name='Descrição do Animal')
+    imagem = models.ImageField(
+        upload_to='animais/',
+        blank=True,
+        null=True,
+        verbose_name='Imagem do Animal'
+    )
 
     def __str__(self):
         return f"{self.nome} ({self.tipo.nome})"
