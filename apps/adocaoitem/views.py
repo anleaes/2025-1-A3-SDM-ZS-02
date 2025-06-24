@@ -7,3 +7,4 @@ from rest_framework import viewsets
 class AdocaoItemViewSet(viewsets.ModelViewSet):
     queryset = AdocaoItem.objects.all()
     serializer_class = AdocaoItemSerializer
+    filterset_fields = ['adocao_id', 'animal_id']
